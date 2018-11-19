@@ -1,0 +1,158 @@
+@import "component/header.scss";
+@import "component/footer.scss";
+* {
+	margin: 0;
+	padding: 0;
+	word-break: break-all;
+}
+
+li {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+body,
+a {
+	color: #333;
+}
+body{
+	position: relative;
+	background-color: #fff;
+	font:12px/1.5 "Microsoft Yahei",tahoma,arial,"Hiragino Sans GB";
+	display: block;
+}
+.clearBox{
+	clear: both;
+}
+.clear{
+	overflow: hidden;
+	font-size: 0;
+	display: block;
+	height: 0;
+	clear: both;
+}
+.main {
+	width: 100%;
+	min-height: 400px;
+}
+
+.main .wrap {
+	width: 990px;
+	min-width: 990px;
+	margin: 0 auto;
+	min-height: 400px;
+	
+}
+.main .wrap table{
+	width: 990px;
+	min-width: 990px;
+	margin: 0 auto;
+	clear: both;
+	margin-top: 50px;
+}
+.main .wrap table thead{
+	height: 32px;
+	
+}
+.main .wrap table thead tr th:nth-child(1){
+	width: 76px;
+}
+.main .wrap table thead tr th:nth-child(2){
+	width: 319px;
+	
+}
+.main .wrap table thead tr th:nth-child(3){
+	width: 135px;
+	
+}
+.main .wrap table thead tr th:nth-child(4){
+	width: 120px;
+	
+}
+.main .wrap table thead tr th:nth-child(5){
+	width: 95px;
+	
+}
+.main .wrap table thead tr th:nth-child(6){
+	width: 70px;
+	
+}
+
+.main .wrap .item tbody{
+	position: relative;
+	height: 112px;
+	background-color: #fffbf2;
+	padding: 15px 20px;
+	border: 1px solid #dfdfdf;
+}
+.main .wrap table tbody tr td:nth-child(1){
+	width: 47px;
+	
+}
+
+.main .wrap table tbody tr td:nth-child(2){
+	width: 313px;
+	
+}
+.main .wrap table tbody tr td:nth-child(2) img{
+	float: left;
+	width: 80px;
+	height: 80px;
+	
+}
+.main .wrap table tbody tr td:nth-child(2) span{
+	/*float: left;*/
+	margin-left: 10px;
+	display: inline-block;
+	clear: both;
+	width: 179px;
+	max-height: 36px;
+	line-height: 18px;
+	color: #333;
+	word-break: break-all;
+	word-wrap: break-word;
+	overflow: hidden;
+	
+}
+.main .wrap table tbody tr td:nth-child(3){
+	width: 103px;
+	
+}
+.main .wrap table tbody tr td:nth-child(4){
+	width: 120px;
+	
+}
+.main .wrap table tbody tr td:nth-child(5){
+	width: 95px;
+	
+}
+.main .wrap table tbody tr td:nth-child(5) .jian,.main .wrap table tbody tr td:nth-child(5) .jia{
+	display: inline-block;
+	height: 20px;
+	width: 20px;
+	background: #ddd;
+	font-size: 16px;
+	line-height: 20px;
+	text-align: center;
+	
+}
+.main .wrap table tbody tr td:nth-child(5) input{
+	width: 50px;
+	text-align: center;
+	height: 20px;
+}
+.main .wrap table tbody tr td:nth-child(6){
+	width: 70px;
+}
+.main .wrap table tbody tr td:nth-child(6) span{
+	display: inline-block;
+	height: 25px;
+	width: 70px;
+	background: #ddd;
+	font-size: 16px;
+	line-height: 25px;
+	text-align: center;
+}

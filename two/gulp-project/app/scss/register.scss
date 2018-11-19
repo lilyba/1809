@@ -1,0 +1,188 @@
+@import "component/footer.scss";
+* {
+    margin: 0;
+    padding: 0;
+    word-break: break-all;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+a:hover{
+    color:#F50;
+}
+body,
+a {
+    color: #333;
+}
+body{
+    position: relative;
+    background-color: #fff;
+    font:12px/1.5 "Microsoft Yahei",tahoma,arial,"Hiragino Sans GB";
+    display: block;
+}
+i{
+    font-style: normal;
+}
+.clearBox{
+    clear: both;
+}
+.clear{
+    overflow: hidden;
+    font-size: 0;
+    display: block;
+    height: 0;
+    clear: both;
+}
+
+.main {
+    width: 100%;
+    background: #f8f8f8;
+}
+
+.main .wrap {
+    width: 990px;
+    margin: 0 auto;
+}
+.main .wrap .header{
+    position: relative; 
+    height: 88px;
+    
+}
+.main .wrap .header .left{
+    float:left;
+    height: 100%;
+    width: 290px;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+.main .wrap .header .left img{
+    height:88px;
+    width:190px;
+}
+.main .wrap .header .left p{
+     color: #666;
+     font-size: 18px;
+}
+.main .wrap .header .right{
+    float:right;
+    height: 100%;
+    width: 128px;
+    display: flex;
+    justify-content:flex-end;
+    align-items:flex-end;
+    
+}
+.main .wrap .content{
+    width: 990px;
+    margin: 0 auto;
+    border:1px solid #ddd;
+    border-top:3px solid #f90;
+    background: #FFF;
+    padding: 55px 0;
+    line-height: 1.5;
+}
+.main .wrap .content form{
+    width: 380px;
+    margin: 0 auto;
+    padding-top: 40px;
+}
+.main .wrap .content form .gift{
+    height: 19px;
+    line-height: 17px;
+}
+.main .wrap .content form .gift span:first-child{
+    display: inline-block;
+    height: 19px;
+    width: 17px;
+    background: url(../img/sprite-register.png) -75px -93px no-repeat;
+}
+.main .wrap .content form .gift span:nth-child(2){
+    display: inline-block;
+    position: relative;
+    font-size: 14px;
+    height: 19px;
+    line-height: 17px;
+    top: -5px;
+}
+.main .wrap .content form .nameInput{
+    position: relative;
+    height:38px;
+    line-height: 38px;
+    margin-top: 10px;
+    width:378px;
+    border:1px solid #ccc;
+    
+}
+.main .wrap .content form .nameInput span{
+    width: 76px;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+.main .wrap .content form .nameInput input{
+    border:none;
+    height: 98%;
+    width:291px;
+    font-size: 14px;
+    outline: none;
+}
+
+.main .wrap .content form .pwdInput{
+    position: relative;
+    height:38px;
+    line-height: 38px;
+    margin-top: 25px;
+    width:378px;
+    border:1px solid #ccc;
+}
+.main .wrap .content form .pwdInput span{
+    width: 76px;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+.main .wrap .content form .pwdInput input{
+    border:none;
+    height: 98%;
+    width:291px;
+    font-size: 14px;
+    outline: none;
+}
+.main .wrap .content form .telInput{
+    position: relative;
+    height:38px;
+    line-height: 38px;
+    margin-top: 25px;
+    margin-bottom: 45px;
+    width:378px;
+    border:1px solid #ccc;
+}
+.main .wrap .content form .telInput span{
+    width: 76px;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+.main .wrap .content form .telInput input{
+    border:none;
+    height: 98%;
+    width:291px;
+    font-size: 14px;
+    outline: none;
+}
+.main .wrap .content form .register{
+    margin-top: 25px;
+    width:378px;
+    height:40px;
+    line-height: 40px;
+    font-size: 20px;
+    text-align: center;
+    color:#FFF;
+    background: #F50;
+    border:none;
+    border-radius: 10px;
+    outline: none;
+}

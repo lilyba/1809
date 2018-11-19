@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="/css/detail.css"/>
+		<style type="text/css">
+			.top>img{
+				/*width: 100%;
+				height: 100%;*/
+				width:360px;
+				height:360px;
+			}
+			.top span {
+				width: 180px;
+				height: 180px;
+				top: 20px;
+				background: rgba(255, 255, 0, .3);
+				position: absolute;
+				display: none;
+				cursor: move;
+				margin-top: 20px;
+				margin-left: 20px;
+			}
+			.big {
+				width: 360px;
+				height: 360px;
+				position: absolute;
+				left: 400px;
+				top: 20px;
+				overflow: hidden;
+				background: red;
+				display: none;
+				z-index: 999;
+			}
+			.big>img {
+				width: 720px;
+				height: 720px;
+				position: absolute;
+			}
+		</style>
+	</head>
+	<body>
+		<header></header>
+		<div class="banner">
+			<div class="wrap">
+				<div class="menuImg">
+					<img src="https://image.suning.cn/uimg/sop/commodity/161240044915777743285221_x.jpg" alt="" />
+					
+				</div>
+				<div class="menu">
+					<ul>
+						<li><a href="#">本店所有商品</a></li>
+						<li><a href="#">首页</a></li>
+						<li><a href="#">新品发售</a></li>
+						<li><a href="#">心动彩妆</a></li>
+						<li><a href="#">草本面膜</a></li>
+						<li><a href="#">细节护理</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="main">
+			<div class="wrap">
+				
+				<div class="item">
+					
+					<div class="left" id="leftcontent"></div>
+					<script type="text/html" id="detil-template">
+					{{each data item i}}
+						<div class="top">
+							<!--放大镜	-->						
+							<img class="bigbigimg" src="{{ item.pic }}"/>
+							<span id="fdj"></span>
+							</div>
+							<div class="big">
+								<img id="bigImg"  src="{{ item.pic }}"/>
+							</div>
+						<ul class="imgs">
+							<li><a href="javascript:;" ><img class="imgchange" src="https://imgservice3.suning.cn/uimg1/b2c/image/8afbSTkE9DYAHDTJdiIz3g.jpg_400w_400h_4e" alt="" />
+							</a></li>
+							<li><a href="javascript:;"><img class="imgchange" src="{{ item.pic }}" alt="" />
+							</a></li>
+							<li><a href="javascript:;"><img class="imgchange" src="https://imgservice.suning.cn/uimg1/b2c/image/DeXeQg13ngJb1oifGlYxcw.jpg_220w_220h_4e" alt="" />
+							</a></li>
+							<li><a href="javascript:;"><img class="imgchange" src="https://imgservice3.suning.cn/uimg1/b2c/image/SzEZmVfesfJKUER4rqnWvw.jpg_400w_400h_4e" alt="" />
+							</a></li>
+							<li><a href="javascript:;"><img class="imgchange" src="https://imgservice2.suning.cn/uimg1/b2c/image/2IEmWEiNPediliPc_gbang==.jpg_400w_400h_4e" alt="" />
+							</a></li>
+							
+						</ul>
+					{{/each}}
+					</script>
+					<div class="center">
+						<div class="title" id = "titilecontent">美康粉黛(MEIKING）雾面丝绒口红彩妆 烛影摇红姨妈色系 丝绒哑光唇膏口红 持久保湿润滋润防水孕妇可用唇色撩人</div>
+						<script type="text/html" id="detil-template1">
+					{{each data item i}}
+						美康粉黛(MEIKING）雾面丝绒口红彩妆 烛影摇红{{ item.name }}
+					{{/each}}
+					</script>
+						<div class="link">
+					 
+							<a href="javascript:;">【11.1-11.11美丽囤货节超级钜惠】【第二件半价；买三免一】哑光雾面； 经典热卖断货色；不易沾杯不易掉色  全店满减狂欢；低至19.9元；更多猛戳~</a>
+							<img src="https://image.suning.cn/uimg/pcms/label02/144607365430200273990000_04.png"/>
+						</div>
+						<div class="dl">
+							<dl>
+								<dt>活动价</dt>
+								<dd><span id="pricecontent">¥299.00 </span>用券最多可再省80.00元</dd>
+								<script type="text/html" id="detil-template2">
+									{{each data item i}}
+										¥ {{ item.price }}.00
+									{{/each}}
+								</script>
+								
+							</dl>
+							<dl class="discount">
+								<dt>领券</dt>
+								<dd>满199用80</dd>
+							</dl>
+							<dl>
+								<dt>促销</dt>
+								<dd>云钻  普通会员返89云钻</dd>
+							</dl>
+							<dl>
+								<dt>送至</dt>
+								<dd>
+									四川成都锦江区
+									有货86元免基础运费</dd>
+							</dl>
+							<a href="#"><img src="https://res.suning.cn/project/pdsWeb/csspc2017/images/header-contact-self.gif"/>联系客服</a>
+							
+							
+						</div>
+						<div class="clearBox"></div>
+						<div class="buy">
+							<dl>
+								<dt>系列</dt>
+								<dd>
+									<a href="#">
+										<span>红杏春意 偏正玫红，红杏色的。</span>
+									</a>
+									<a href="#">
+										<span>桃之夭夭 桃红色</span>
+									</a>
+									
+								</dd>
+							</dl>
+							<dl class="num">
+								<dt>数量</dt>
+								<dd><span class = "jian">-</span><input type="text" name="num" id="num" value="1" />
+									<span class = "jia">+</span>  正在促销,没人限购2件
+								</dd>
+							</dl>
+							<div class="clearBox"></div>
+							<div id="addShop">
+								<i ></i>
+								<input type="button" name="add" id="add" class="cart" value="加入购物车" />
+							</div>
+							
+						</div>
+						
+						
+					</div>
+					<div class="right"></div>
+				</div>
+			</div>
+		</div>
+		<div class="desc">
+			<div class="wrap">
+				<div class="left">
+					<div class="shop">
+						
+					</div>
+					<div class="goodItem">
+						<img src="https://imgservice.suning.cn/uimg1/b2c/image/9O6n_ZZ8L9XP02b9CScFsg==.jpg_120w_120h_4e"/>
+						<span>MAC 魅可防水口红持久不掉色不沾杯子唇膏#707 RUBY WOO复古正红色</span>
+						<span>$123</span>
+					</div>
+					<div class="goodItem">
+						<img src="https://imgservice.suning.cn/uimg1/b2c/image/r5E6ix5A1dr3BjfXkcLJ_w.jpg_120w_120h_4e"/>
+						<span>美康粉黛(MEIKING)凤舞牡丹丝绒唇釉口红唇膏4.8g 红鸢 吃土温柔红色 哑光显色不易脱色持</span>
+						<span>$123</span>
+					</div>
+					<div class="goodItem">
+						<img src="https://imgservice.suning.cn/uimg1/b2c/image/9O6n_ZZ8L9XP02b9CScFsg==.jpg_120w_120h_4e"/>
+						<span>MAC 魅可防水口红持久不掉色不沾杯子唇膏#707 RUBY WOO复古正红色</span>
+						<span>$123</span>
+					</div>
+					<div class="goodItem">
+						<img src="https://imgservice.suning.cn/uimg1/b2c/image/r5E6ix5A1dr3BjfXkcLJ_w.jpg_120w_120h_4e"/>
+						<span>美康粉黛(MEIKING)凤舞牡丹丝绒唇釉口红唇膏4.8g 红鸢 吃土温柔红色 哑光显色不易脱色持</span>
+						<span>$123</span>
+					</div>
+					<div class="goodItem">
+						<img src="https://imgservice.suning.cn/uimg1/b2c/image/9O6n_ZZ8L9XP02b9CScFsg==.jpg_120w_120h_4e"/>
+						<span>MAC 魅可防水口红持久不掉色不沾杯子唇膏#707 RUBY WOO复古正红色</span>
+						<span>$123</span>
+					</div>
+					<div class="goodItem">
+						<img src="https://imgservice.suning.cn/uimg1/b2c/image/r5E6ix5A1dr3BjfXkcLJ_w.jpg_120w_120h_4e"/>
+						<span>美康粉黛(MEIKING)凤舞牡丹丝绒唇釉口红唇膏4.8g 红鸢 吃土温柔红色 哑光显色不易脱色持</span>
+						<span>$123</span>
+					</div>
+					<div class="goodItem">
+						<img src="https://imgservice.suning.cn/uimg1/b2c/image/9O6n_ZZ8L9XP02b9CScFsg==.jpg_120w_120h_4e"/>
+						<span>MAC 魅可防水口红持久不掉色不沾杯子唇膏#707 RUBY WOO复古正红色</span>
+						<span>$123</span>
+					</div>
+					<div class="goodItem">
+						<img src="https://imgservice.suning.cn/uimg1/b2c/image/r5E6ix5A1dr3BjfXkcLJ_w.jpg_120w_120h_4e"/>
+						<span>美康粉黛(MEIKING)凤舞牡丹丝绒唇釉口红唇膏4.8g 红鸢 吃土温柔红色 哑光显色不易脱色持</span>
+						<span>$123</span>
+					</div>
+				</div>
+				<div class="center">
+					<div class="tab" id ="tab">
+						<ul class="tabButtom">
+							<li class="ac">商品详情</li>
+							<li >包装及参数</li>
+							<li >评价( 500 + )</li>
+							<li >问问已购用户</li>
+							<li >苏宁国际答疑</li>
+							<li >包装及参数</li>
+						</ul>
+						<div class="content">
+							<div class="item" style="display: block;">11
+								<div class="parmeter">
+									<div class="hd">
+										核心参数
+									</div>
+									<div class="cnt">
+										圣罗兰(YSL)
+									</div>
+								</div>
+								<div class="imgItem">
+									<img src="https://image.suning.cn/uimg/sop/commodity/204456850169353277174734_x.jpg"/>
+									<img src="https://image.suning.cn/uimg/sop/commodity/274918921412843095794475_x.jpg" alt="" />
+								</div>
+							</div>
+							<div class="item">
+								<div class="parmeter">
+									<div class="hd">
+										核心参数222
+									</div>
+									<div class="cnt">
+										圣罗兰(YSL)
+									</div>
+								</div>
+								<div class="imgItem">
+									<img style="height: 810px;width: 750px;" src="https://image.suning.cn/uimg/sop/commodity/134648461710628536019729_x.jpg"/>
+									<img src="https://image.suning.cn/uimg/sop/commodity/150233142816964852189109_x.jpg" alt="" />
+								</div>
+							</div>
+							<div class="item">
+								<div class="parmeter">
+									<div class="hd">
+										核心参数
+									</div>
+									<div class="cnt">
+										圣罗兰(YSL)
+									</div>
+								</div>
+								<div class="imgItem">
+									<img src="https://image.suning.cn/uimg/sop/commodity/204456850169353277174734_x.jpg"/>
+									<img src="https://image.suning.cn/uimg/sop/commodity/274918921412843095794475_x.jpg" alt="" />
+								</div>
+							</div>
+							<div class="item">
+								<div class="parmeter">
+									<div class="hd">
+										核心参数222
+									</div>
+									<div class="cnt">
+										圣罗兰(YSL)
+									</div>
+								</div>
+								<div class="imgItem">
+									<img src="https://image.suning.cn/uimg/sop/commodity/150233142816964852189109_x.jpg" alt="" />
+									<img style="height: 810px;width: 750px;" src="https://image.suning.cn/uimg/sop/commodity/134648461710628536019729_x.jpg"/>
+								</div>
+							</div>
+							<div class="item">
+								<div class="parmeter">
+									<div class="hd">
+										核心参数
+									</div>
+									<div class="cnt">
+										圣罗兰(YSL)
+									</div>
+								</div>
+								<div class="imgItem">
+									<img src="https://image.suning.cn/uimg/sop/commodity/204456850169353277174734_x.jpg"/>
+									<img src="https://image.suning.cn/uimg/sop/commodity/274918921412843095794475_x.jpg" alt="" />
+								</div>
+							</div>
+							<div class="item">
+								<div class="parmeter">
+									<div class="hd">
+										核心参数222
+									</div>
+									<div class="cnt">
+										圣罗兰(YSL)
+									</div>
+								</div>
+								<div class="imgItem">
+									<img style="height: 810px;width: 750px;" src="https://image.suning.cn/uimg/sop/commodity/134648461710628536019729_x.jpg"/>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<footer></footer>
+		<!--<div id="detail"></div>
+	<script type="text/html" id="detil-template">
+		{{each data item i}}
+		
+		<h3>{{ item.name }}</h3>
+		<p>{{ item.price }}</p>
+		<img src="{{ item.img }}">
+		{{/each}}
+	</script>-->
+
+<script type="text/javascript" src="/libs/require/require.js" data-main="/js/detail.js"></script>
+
+	</body>
+</html>
+
+	

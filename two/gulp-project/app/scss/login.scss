@@ -1,0 +1,178 @@
+@import "component/footer.scss";
+* {
+	margin: 0;
+	padding: 0;
+	word-break: break-all;
+}
+
+li {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+body,
+a {
+	color: #333;
+}
+a:hover{
+    color:#F50;
+}
+body{
+	position: relative;
+	background-color: #fff;
+	font:12px/1.5 "Microsoft Yahei",tahoma,arial,"Hiragino Sans GB";
+	display: block;
+}
+.clearBox{
+	clear: both;
+}
+.clear{
+	overflow: hidden;
+	font-size: 0;
+	display: block;
+	height: 0;
+	clear: both;
+}
+header {
+    width: 100%;
+}
+
+header .wrap {
+    height: 100px;
+    width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+header .wrap img{
+    height: 100px;
+    width: 189px;
+}
+header .wrap p{
+    line-height: 16px;
+    border:1px solid red;
+    margin-left: 5px;
+    padding: 4px 4px;
+}
+.main {
+	width: 100%;
+	/*background: url(https://image.suning.cn/uimg/cms/img/154167634456184280.png);*/
+}
+
+.main .wrap {
+	height: 600px;
+	background: url(https://image.suning.cn/uimg/cms/img/154167634456184280.png) center no-repeat;
+ 	
+	/*margin: 0 auto;*/
+}
+.main .wrap .center{
+	width: 970px;
+	height: 100%;
+	margin: 0 auto;
+}
+.main .wrap .content{
+	position: relative;
+	width: 360px;
+	height: 410px;
+	background: #fff;
+	float:right;
+	box-shadow: 0 0 2px #ececec;
+	margin-top: 50px;
+}
+.main .wrap .content form h4{
+	
+	margin-top: 15px;
+	width: 360px;
+	height: 51px;
+	line-height: 20px;
+	font-size: 16px;
+	color: #f60;
+	text-align: center;
+	font-family: "Microsoft Yahei";
+	border-bottom: 1px solid #eee;
+	
+}
+.main .wrap .content form .bg{
+	position: relative;
+	width: 312px;
+	margin: 0 auto;
+	
+}
+.main .wrap .content form .bg input:first-child{
+	position: relative;
+	height:36px ;
+	width: 276px;
+	border:1px solid #ddd;
+	padding-left:36px;
+	color:#999;
+	margin: 50px 0 20px ;
+}
+.main .wrap .content form .bg input i{
+	display: inline-block;
+	height: 36px;
+	width: 36px;
+	position: absolute;
+	color:#999;
+	top:0;
+	left:0;
+	background: url(/img/sprite-login.png) -82px -67px no-repeat;
+	
+}
+.main .wrap .content form .bg input:nth-child(3){
+	position: relative;
+	height:36px ;
+	width: 276px;
+	border:1px solid #ddd;
+	padding-left:36px;
+	color:#999;
+}
+.main .wrap .item .center .buy div i{
+	width: 20px;
+	height: 20px;
+	display: inline-block;
+	position: absolute;
+	background: url(https://res.suning.cn/project/pdsWeb/csspc2017/images/f-icons-ex1.png?v=1539657793) no-repeat;
+	background-position: -862px -864px  ; 
+	background-size:100% 100% ;
+	left: 5px;
+	bottom: 50px;
+	z-index:999;
+    vertical-align: middle;
+    margin-right: 3px;
+    margin-top: -2px;
+}
+.main .wrap .content form .bg input:last-child{
+	position: relative;
+	height:36px ;
+	width: 276px;
+	border:1px solid #ddd;
+	padding-left:36px;
+	color:#999;
+}
+.main .wrap .item .center .buy  .cart{
+	width: 135px;
+	height: 40px;
+	color:white;
+	font:16px/40px microsoft yahei;
+	padding-left: 30px;
+	border:none;
+	background:#f60;
+	/**/
+}
+.main .wrap .content form button{
+    margin-top: 40px;
+    position: relative;
+    height:36px ;
+    line-height: 36px;
+    width: 314px;
+    border:none;
+    color:#FFF;
+    background: #F50;
+}
+footer{
+    height: 200px!important;
+}

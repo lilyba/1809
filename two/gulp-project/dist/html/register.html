@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="/css/register.css"/>
+		<style type="text/css">
+			 .high{ color: red; }
+		     .msg{ font-size: 13px; }
+		     .onError{ color: red; }
+		     .onSuccess{ color: green; }
+			
+		</style>
+	</head>
+	<body>
+		<div class="main">
+			<div class="wrap">
+				<div class="header">
+					<div class="left">
+						<a href="/index.html" ><img src="/img/logo.png"/></a>
+						<p>欢迎注册</p>
+					</div>
+					<div class="right"><a href="/html/login.html">我已经注册,马上登录 ></a></div>
+				</div>
+				<div class="content">
+					<form >
+						<div class="gift"><span >	
+						</span> <span>注册领<i>199</i>元大礼包</span> </div>
+						<div class="nameInput">
+							<span>用户名</span>
+							<input type="text" name="name" id="name" class="require" value="" autofocus="autofocus" placeholder="&nbsp;&nbsp;请输入用户名 " />
+						</div>
+						<div class="pwdInput">
+							<span>密码</span>
+							<input type="password" name="pwd" id="pwd" class="require" value="" placeholder="&nbsp;&nbsp;请输入密码" />
+						</div>
+						<div class="telInput">
+							<span>电话号码</span>
+							<input type="tel" name="tel" id="tel" class="require" value="" placeholder="&nbsp;&nbsp;请输入手机号" />
+						</div>
+						<div class="emailInput">
+							<span>电话号码</span>
+							<input type="email" name="email" id="email" class="require" value="" placeholder="&nbsp;邮箱" />
+						</div>
+						<div class="check">
+							<input type="checkbox" name="" id="checkbox" value="" />
+							<a href="#">《苏宁易购会员章程》</a>
+							<a href="#">《苏宁广告联盟在线协议》</a>
+							<a href="#">《易付宝协议》</a>
+						</div>
+						<button id="register" class="register">提交注册</button>
+					</form>
+				</div>
+			</div>
+		</div>
+		<footer></footer>
+		<script type="text/javascript" src="/libs/require/require.js" data-main="/js/register.js" ></script>
+	</body>
+</html>
+
+	
